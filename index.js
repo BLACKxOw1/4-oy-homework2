@@ -1,4 +1,8 @@
+
+
 // //                                  Func1
+
+
 // const power = (a, n) => {
 //   let result = 1;
 //   for (let i = 0; i < n; i++) {
@@ -8,15 +12,23 @@
 // };
 // console.log(power(3, 5));
 
+
+
 // //                                  Func2
+
 // const mean = (a, b) => {
 //   const result1 = (a + b) / 2;
 //   const result2 = Math.sqrt(a * b);
 //   return [result1, result2];
-// };
-// console.log(mean(12, 58));
+// }
+
+// const result = mean(12, 58);
+// console.log(result);
+
+
 
 // //                                  Func3
+
 // const sign = (n) => {
 //   if (n > 0) {
 //     return 1;
@@ -25,30 +37,43 @@
 //   } else {
 //     return 0;
 //   }
-// };
+// }
 // console.log(sign(10));
 
+
+
 // //                                  Func4
+
 // const numberOfRoots = (A, B, C) => {
-//   let D = B ** 2 - 4 * A * C;
+//   let D = B ** 2 - 4*A*C
+
 //   if (D > 0) {
 //     return 2;
 //   } else if (D == 0) {
 //     return 1;
-//   } else if (D < 0) {
+//   } else if (D < 0){
 //     return 0;
 //   }
-// };
-// console.log('ildizlar sonini :', numberOfRoots(1, -6, 9), 'ta');
+
+// }
+
+// console.log('ildizlar sonini :' , numberOfRoots(1, -6, 9) , 'ta');
+
+
 
 // //                                  Func5
+
 // const areaCircle = (R) => {
 //   const S = Math.PI * R * R;
-//   return S.toFixed(2);
-// };
+//   return S.toFixed(2)
+// }
+
 // console.log('Doiraning yuzi :', areaCircle(5));
 
+
+
 // //                                  Func6
+
 // const sumRange = (A, B) => {
 //   let result = 0;
 //   if (A > B) {
@@ -59,10 +84,15 @@
 //     }
 //     return result;
 //   }
-// };
+
+// }
+
 // console.log('A va B sonlari orasidagi sonlar yig\'indisi :', sumRange(8, 10));
 
+
+
 // //                                  Func7
+
 // const calc = (A, B, S) => {
 //   if (S === "+") {
 //     return A + B;
@@ -75,20 +105,28 @@
 //   } else {
 //     return 0;
 //   }
-// };
+// }
+
 // console.log(calc(10, 15, "+"));
 
+
+
 // //                                  Func8
+
 // const isEven = (K) => {
 //   if (K % 2 === 0) {
 //     return true;
 //   } else {
 //     return false;
 //   }
-// };
+// }
+
 // console.log('juft sonmi', isEven(11));
 
+
+
 // //                                  Func9
+
 // const sortABC = (a, b, c) => {
 //   let min;
 //   let mid;
@@ -124,10 +162,14 @@
 //   }
 
 //   return min + ", " + mid + ", " + max;
-// };
+// }
+
 // console.log(sortABC(10, 5, 8));
 
+
+
 // //                                  Func10
+
 // const isPowerN = (K, N) => {
 //   if (K <= 0 || N <= 1) return false;
 
@@ -138,10 +180,13 @@
 //   }
 
 //   return power === K;
-// };
+// }
 // console.log(isPowerN(27, 3));
 
+
+
 // //                                  Func11
+
 // const isPrime = (n) => {
 //   if (n < 2) return false;
 
@@ -152,13 +197,16 @@
 //   }
 
 //   return true;
-// };
+// }
 // console.log(isPrime(7));
 
+
+
 // //                                  Func12
+
 // let tub = 0;
 
-// const isPrime2 = (N) => {
+// const isPrime = (N) => {
 //   let loop = 0;
 //   if (N < 2) {
 //     return false;
@@ -173,23 +221,27 @@
 //   } else {
 //     return false;
 //   }
-// };
+// }
 
 // const numberOfPrime = (number) => {
 //   let count = 0;
 //   for (let j = 1; j <= number; j++) {
-//     if (isPrime2(j)) {
+//     if (isPrime(j)) {
 //       count++;
 //     }
 //   }
 //   return count;
-// };
+// }
+
 // console.log(numberOfPrime(10));
 
+
+
 // //                                  Func13
+
 // const digitCount = (K) => {
 //   return K.toString().length;
-// };
+// }
 
 // const digitNth = (K, N) => {
 //   let count = digitCount(K);
@@ -199,10 +251,15 @@
 //   }
 
 //   return parseInt(K.toString()[N - 1]);
-// };
+// }
+
 // console.log(digitNth(105782, 7));
 
+
+
+
 // //                                  Func14
+
 // const inverseNumber = (N) => {
 //   let inverse = '';
 //   let last = 0;
@@ -212,11 +269,17 @@
 //     inverse += last;
 //   }
 //   return parseInt(inverse);
-// };
+// }
+
 // console.log(inverseNumber(12456));
 
+
+
+
 // //                                  Func15
-// const inverseNumber2 = (N) => {
+
+
+// const inverseNumber = function(N) {
 //   let inverse = '';
 //   let last = 0;
 //   while (N != 0) {
@@ -225,29 +288,41 @@
 //     inverse += last;
 //   }
 //   return parseInt(inverse);
-// };
+// }
 
-// const isPalindrom = (N) => {
-//   return N == inverseNumber2(N);
-// };
-// console.log(isPalindrom(1224221));
+// function isPalindrom(N) {
+//   return N == inverseNumber(N)
+// }
+
+// console.log(isPalindrom(1331));
+
+
+
 
 // //                                  Func16
-// const factorial = (N) => {
+
+
+// const factorial = function(N) {
 //   if (N <= 0) {
 //     return 1;
-//   } else {
+//   }else{
 //     let result = 1;
 //     for (let i = 1; i < N; i++) {
 //       result *= i;
 //     }
 //     return result;
 //   }
-// };
+
+// }
 // console.log(factorial(0));
 
+
+
+
 // //                                  Func17
-// const getSum3 = (N) => {
+
+
+// const getSum3 = function(N) {
 //   if (N <= 0) {
 //     return '0 dan katta son kiriting';
 //   } else {
@@ -257,11 +332,18 @@
 //     }
 //     return result;
 //   }
-// };
+
+// }
+
 // console.log(getSum3(15));
 
+
+
+
 // //                                  Func18
-// const sumOddEven = (N) => {
+
+
+// const sumOddEven = function(N) {
 //   if (N <= 0) {
 //     return '0 dan katta son kiriting';
 //   } else {
@@ -270,24 +352,37 @@
 //     for (let i = 0; i <= N; i++) {
 //       if (i % 2 === 1) {
 //         odd += i;
-//       } else {
+//       }else{
 //         even += i;
 //       }
 //     }
 //     return [even, odd];
 //   }
-// };
+
+// }
+
 // console.log(sumOddEven(10));
 
+
+
+
 // //                                  Func19
-// const invertTime = (H, M, S) => {
+
+
+// const invertTime = function(N) {
 //   let T = H * 3600 + M * 60 + S;
 //   return T;
-// };
+// }
+
 // console.log(invertTime(0, 6, 40));
 
+
+
+
 // //                                  Func20
-// const invertTime2 = (H, M, S) => {
+
+
+// const invertTime = function(H, M, S) {
 //   if (S > 0) {
 //     S = S - 1;
 //   } else {
@@ -306,12 +401,20 @@
 //       }
 //     }
 //   }
+
 //   return H + ":" + M + ":" + S;
-// };
-// console.log(invertTime2(0, 6, 0));
+// }
+
+
+// console.log(invertTime(0, 6, 0));
+
+
+
 
 // //                                  Func21
-// const isLeapYear = (Y) => {
+
+
+// const isLeapYear = function(Y) {
 //   if (Y % 400 === 0) {
 //     return true;
 //   } else if (Y % 100 === 0) {
@@ -321,11 +424,17 @@
 //   } else {
 //     return false;
 //   }
-// };
+
+// }
+
 // console.log(`kabisa yilimi?  ${isLeapYear(2040)}`);
 
+
+
+
 // //                                  Func22
-// const isLeapYear2 = (Y) => {
+
+// const isLeapYear = function(Y) {
 //   if (Y % 400 === 0) {
 //     return true;
 //   } else if (Y % 100 === 0) {
@@ -335,7 +444,7 @@
 //   } else {
 //     return false;
 //   }
-// };
+// }
 
 // const monthDays = (M, Y) => {
 //   if (M === 1 || M === 3 || M === 5 || M === 7 || M === 8 || M === 10 || M === 12) {
@@ -347,7 +456,7 @@
 //   }
 
 //   if (M === 2) {
-//     if (isLeapYear2(Y)) {
+//     if (isLeapYear(Y)) {
 //       return 29;
 //     } else {
 //       return 28;
@@ -355,5 +464,46 @@
 //   }
 
 //   return -1;
-// };
+// }
+
 // console.log(monthDays(2, 2020));
+
+
+
+
+//                                  Func23
+
+// function isLeapYear(Y) {
+//   if (Y % 400 === 0) return true;
+//   if (Y % 100 === 0) return false;
+//   if (Y % 4 === 0) return true;
+//   return false;
+// }
+
+// function monthDays(M, Y) {
+//   if ([1, 3, 5, 7, 8, 10, 12].includes(M)) return 31;
+//   if ([4, 6, 9, 11].includes(M)) return 30;
+//   if (M === 2) return isLeapYear(Y) ? 29 : 28;
+//   return -1;
+// }
+
+// function prevDate(D, M, Y) {
+//   if (D > 1) {
+//     D = D - 1;
+//   } else {
+//     if (M === 1) {
+//       M = 12;
+//       Y = Y - 1;
+//     } else {
+//       M = M - 1;
+//     }
+//     D = monthDays(M, Y);
+//   }
+
+//   if (D < 10) D = '0' + D;
+//   if (M < 10) M = '0' + M;
+
+//   return D + '.' + M + '.' + Y;
+// }
+
+// console.log(prevDate(10, 3, 2022));
